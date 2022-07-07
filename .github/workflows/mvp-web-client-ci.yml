@@ -23,15 +23,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd tests
-          npm ci
           npx playwright install-deps
           npx playwright install
 
       - name: Run Playwright Tests
         continue-on-error: false
         run: |
-          npx playwright test e2e --reporter=html --config playwright.config.ts
+          npx playwright test --reporter=html
 
       - name: get-npm-version
         id: package-version
