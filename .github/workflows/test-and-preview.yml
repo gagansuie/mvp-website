@@ -34,3 +34,4 @@ jobs:
     name: Deploy to Cloudflare Pages (Preview)
     needs: [test]
     uses: ./.github/workflows/deploy-to-pages.yml
+    secrets: inherit
