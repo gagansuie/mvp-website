@@ -1,0 +1,25 @@
+name: deploy-to-pages.yml
+
+on:
+  workflow_call:
+
+jobs:
+  deploy:
+    name: Deploy to Cloudflare Pages
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@master
+
+      - run: npm install && npm run build
+
+      - name: Publish
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: "mvp-web-client"
+          directory: "/.svelte-kit"
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
