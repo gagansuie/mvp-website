@@ -31,7 +31,7 @@ jobs:
       - name: Run Playwright Tests
         continue-on-error: false
         run: |
-          npx playwright test e2e --reporter=html --config playwright.config.js
+          npx playwright test e2e --reporter=html --config playwright.config.ts
 
       - name: get-npm-version
         id: package-version
