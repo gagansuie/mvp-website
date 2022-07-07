@@ -30,7 +30,7 @@ jobs:
 
       - name: Run Playwright Tests
         continue-on-error: false
-        working-directory: testing
+        working-directory: tests
         run: |
           npx playwright test e2e --reporter=html --config playwright.config.js
 
