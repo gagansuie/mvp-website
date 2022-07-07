@@ -12,12 +12,16 @@ permissions:
 jobs:
   production:
     name: Deploy to Cloudflare Pages (Production)
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@master
+    uses: ./.github/workflows/deploy-to-pages.yml
+    secrets: inherit
 
-      - name: Deploy
-        uses: ./.github/workflows/deploy-to-pages.yml
+  create-tag:
+    name: Create Tag
+    runs-on: ubuntu-latest
+    needs: [production]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - name: Get NPM version
         id: package-version
