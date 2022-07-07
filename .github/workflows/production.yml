@@ -13,6 +13,7 @@ jobs:
   production:
     name: Deploy to Cloudflare Pages (Production)
     uses: ./.github/workflows/deploy-to-pages.yml
+    secrets: inherit
 
   create-tag:
     name: Create Tag
