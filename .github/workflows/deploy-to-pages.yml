@@ -11,7 +11,8 @@ jobs:
       contents: read
       deployments: write
     steps:
-      - uses: actions/checkout@master
+      - name: Checkout
+        uses: actions/checkout@v3
 
       - run: npm install && npm run build
 
