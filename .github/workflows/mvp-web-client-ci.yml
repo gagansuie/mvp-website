@@ -23,6 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          npm install
           npx playwright install-deps
           npx playwright install
 
