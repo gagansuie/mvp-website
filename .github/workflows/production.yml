@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Deploy
-        uses: ./.github/workflows/deploy-to-pages.yml
+        uses: ./.github/workflows/deploy-to-pages
 
       - name: Get NPM version
         id: package-version
