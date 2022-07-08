@@ -38,3 +38,4 @@ jobs:
               ref: 'refs/tags/release/${{ steps.package-version.outputs.current-version}}',
               sha: context.sha
             })
+        # continue-on-error: true
