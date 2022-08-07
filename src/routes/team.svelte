@@ -27,7 +27,7 @@
 			/>
 		</svg>
 		<p class="max-w-2xl text-center dark:dark:text-gray-400">
-			At a assumenda quas cum earum ut itaque commodi saepe rem aspernatur quam natus quis nihil
+			At a assumenda quas cum earum ut commodi saepe rem aspernatur quam natus quis nihil
 			quod, hic explicabo doloribus magnam neque, exercitationem eius sunt!
 		</p>
 		<div class="flex flex-row flex-wrap-reverse justify-center">
@@ -60,5 +60,5 @@
 				currentGame="Overwatch"
 			/>
 		</div>
-	</div>
+	</div> 
 </section>
