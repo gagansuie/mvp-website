@@ -41,7 +41,7 @@
 		<div class="lg:w-96 relative">
 			<img
 				src={play_earn_img}
-				alt="Hero Image"
+				alt="Hero"
 				class="relative rounded-lg mx-auto shadow-lg"
 			/>
 		</div>
