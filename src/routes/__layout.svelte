@@ -5,12 +5,35 @@
 
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+
+	// @ts-ignore
+	import NProgress from 'nprogress';
+	import { navigating } from '$app/stores';
+
+	// NProgress Loading bar
+	import 'nprogress/nprogress.css';
+
+	NProgress.configure({
+		minimum: 0.75,
+		showSpinner: false,
+		speed: 5,
+		trickleSpeed: 200
+	});
+
+	$: {
+		if ($navigating) {
+			NProgress.start();
+		}
+		if (!$navigating) {
+			NProgress.done();
+		}
+	}
 </script>
 
 <svelte:head>
-	<title>MVP</title> />
+	<title>MVP</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
 	<link
 		href="https://fonts.googleapis.com/css?family=Oxanium:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
 		rel="stylesheet"

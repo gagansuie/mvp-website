@@ -86,9 +86,9 @@
 					<ul class="block lg:flex font-medium text-sm h-[52px] pt-[2px] uppercase">
 						<MenuItem name="Forums" link="/" />
 						<MenuItem name="Skins" link="/" />
-						<MenuItem name="Roadmap" link="/" />
+						<MenuItem name="Roadmap" link="/roadmap" />
 						<MenuItem name="Whitepaper" link="/" />
-						<MenuItem name="Rarity" link="/" />
+						<MenuItem name="Rarity" link="/rarity" />
 						<MenuItem name="Team" link="/team" />
 					</ul>
 				</nav>
@@ -109,7 +109,6 @@
 					</div>
 				
 				
-					
 					<LinkButton name="Download" link="/" />
 				</div>
 			</div>

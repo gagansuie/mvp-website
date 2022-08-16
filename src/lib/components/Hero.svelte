@@ -5,7 +5,7 @@
 </script>
 
 <section
-	class="top-0 h-screen w-full flex flex-col items-center justify-center text-center text-white py-0 px-3 opacity-90"
+	class="top-0 h-screen w-full flex flex-col flex-auto items-center justify-center text-center text-white py-0 px-3 opacity-90"
 >
 	<div class="video-docker absolute top-0 left-0 w-full h-full overflow-hidden bg-main-200">
 		<video
@@ -18,9 +18,9 @@
 		/>
 	</div>
 	<div class="video-content space-y-4 pt-28">
-		<h2 class="text-xl font-semibold text-white font-rocknroll uppercase tracking-widest">Season 2</h2>
-		<h1 class="font-bold text-white text-6xl uppercase font-rocknroll tracking-widest">Shadowkeep</h1>
-		<h3 class="text-lg font-semibold text-white"></h3>
+		<h2 class="text-xl font-semibold text-white font-rocknroll uppercase tracking-widest">Season 2: Phase 2</h2>
+		<h1 class="font-extrabold text-white text-6xl uppercase font-rocknroll tracking-widest">Shadowkeep</h1>
+		<h3 class="text-4xl font-semibold text-prime-400">Seasons Pass Edition</h3>
 	</div>
 	<div class="text-center space-y-0 video-content pt-72">
 		<div class="space-x-5 text-white animate-bounce">
