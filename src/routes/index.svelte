@@ -9,7 +9,7 @@
 />
 
 <section
-	class="flex flex-col lg:flex-row-reverse space-y-16 lg:space-y-0 text-center lg:text-left container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32 bg-light-200"
+	class="flex flex-col lg:flex-row-reverse w-full space-y-16 lg:space-y-0 text-center lg:text-left container xl:max-w-7xl mx-auto px-4 py-16 lg:px-8 lg:py-32 bg-light-200"
 >
 	<div class="lg:w-1/2 lg:flex lg:items-center">
 		<div>
@@ -94,7 +94,7 @@
 </section>
 
 
-<section class="flex flex-col lg:flex-row-reverse space-y-12 lg:space-y-0 text-center lg:text-left container xl:max-w-7xl mx-auto px-4 pt-4 pb-16 lg:px-8 lg:py-32 bg-light-200">
+<section class="flex flex-col lg:flex-row-reverse space-y-12 lg:space-y-0 text-center lg:text-left container xl:max-w-7xl mx-auto px-4 pt-4 pb-16 lg:px-8 lg:py-32 bg-light-200 w-full">
 	<div class="lg:w-1/2 lg:mr-16 lg:flex lg:text-center lg:justify-center lg:items-center">
 		<div class="lg:w-[29rem] relative">
 			<img src="https://res.cloudinary.com/dhjoyvcn1/image/upload/v1660661776/2022_Season_of_the_Haunted_Characters_Caiatl_LARGE_002_duu7dh.jpg" alt="Hero" class="relative rounded-lg mx-auto shadow-lg" />
