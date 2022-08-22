@@ -28,6 +28,13 @@
 			NProgress.done();
 		}
 	}
+
+	/*const goToTop = async () => {
+
+
+	}*/
+
+	
 </script>
 
 <svelte:head>
@@ -42,7 +49,10 @@
 		href="https://fonts.googleapis.com/css?family=RocknRoll+One:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
 		rel="stylesheet"
 	/>
-	<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap"
+		rel="stylesheet"
+	/>
 	<link
 		rel="stylesheet"
 		href="https://cdn.jsdelivr.net/gh/codack04/github-cdn-service/font-awesome/6.1.0/css/all.min.css"
@@ -77,10 +87,9 @@
 	/>
 </svelte:head>
 
-
-<main class="flex flex-col mx-auto w-full min-h-screen font-oxanium items-center bg-light-200">
+<main class="w-full min-h-screen font-oxanium items-center bg-light-200 mx-auto sm:overflow-x-hidden">
 	<Header />
 	<slot />
 	<Footer />
-</main>
 
+</main>
