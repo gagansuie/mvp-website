@@ -1,5 +1,5 @@
 # Work in progress
-### The base website for our upcoming Web3 Fantasy Battle Royale game's website
+### The base website for our upcoming project
 
 ## Developing
 
