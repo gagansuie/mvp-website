@@ -17,10 +17,13 @@
     &nbsp;
     <a href="https://dependabot.com/"><img src="https://img.shields.io/badge/dependabot-enabled-025e8c?logo=Dependabot"></a>
     &nbsp;
+</p>
+
+<p align="center">
     <a href="https://github.com/CodeCrowCorp/mvp-website/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-GPL3.0-00bfff.svg"></a>
     &nbsp;
-    <a href="https://discord.gg/codecrow"><img src="https://img.shields.io/discord/766681806463303680?label=discord&color=5a66f6"></a>
-    &nbsp;
+	<a href="https://discord.gg/codecrow"><img src="https://img.shields.io/discord/766681806463303680?label=discord&color=5a66f6"></a>
+	&nbsp;
     <a href="https://twitter.com/CodeCrowCorp"><img src="https://img.shields.io/badge/twitter-follow_us-1d9bf0.svg"></a>
     &nbsp;
 </p>
