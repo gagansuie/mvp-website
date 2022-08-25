@@ -1,5 +1,3 @@
-<br>
-
 <h3 align="center">
     A template website for our upcoming project
 </h3>
