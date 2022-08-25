@@ -20,7 +20,7 @@
 		"prepare": "svelte-kit sync"
 	},
 	"devDependencies": {
-		"@playwright/test": "^1.25.0",
+		"@playwright/test": "^1.25.1",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"autoprefixer": "10.4.5",
