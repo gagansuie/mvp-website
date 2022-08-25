@@ -77,7 +77,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1180,
+                  "duration": 3497,
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
@@ -105,7 +105,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 885,
+                  "duration": 810,
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
@@ -133,7 +133,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 828,
+                  "duration": 1023,
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
@@ -161,7 +161,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 844,
+                  "duration": 792,
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
