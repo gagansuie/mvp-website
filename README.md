@@ -29,12 +29,12 @@
 
 Once you've forked and cloned the project:
 
-```bash
+```sh
 # Install dependencies 
-npm install
+$ npm install
 
 # Start a development server
-npm run dev
+$ npm run dev
 ```
 
 ## Contributing
