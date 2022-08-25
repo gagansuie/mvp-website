@@ -38,7 +38,6 @@ jobs:
           files: results.json
           flags: unittests
           name: codecov-mvp-website
-          path_to_write_report: ./coverage/codecov_report.txt
           fail_ci_if_error: true
           verbose: true
   preview:
