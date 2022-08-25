@@ -34,7 +34,7 @@ jobs:
       - name: Report Tests to Codecov
         uses: codecov/codecov-action@v3
         with:
-          files: results.json
+          files: ./results.json
           flags: unittests
           name: codecov-mvp-website
           fail_ci_if_error: true
