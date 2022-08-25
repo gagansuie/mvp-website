@@ -9,7 +9,7 @@
 <p align="center">
     <a href="https://github.com/CodeCrowCorp/mvp-website"><img src="https://img.shields.io/github/v/release/CodeCrowCorp/mvp-website?color=%23ff00a0&include_prereleases&label=version&sort=semver"></a>
     &nbsp;
-    <a href="https://github.com/CodeCrowCorp/mvp-website"><img src="https://img.shields.io/badge/built_with-Svelte-FF3E00.svg"></a>
+    <a href="https://github.com/CodeCrowCorp/mvp-website"><img src="https://img.shields.io/badge/built_with-svelte-FF3E00.svg"></a>
     &nbsp;
 	<a href="https://github.com/CodeCrowCorp/mvp-website/actions"><img src="https://github.com/CodeCrowCorp/mvp-website/actions/workflows/production.yml/badge.svg"></a>
     &nbsp;
