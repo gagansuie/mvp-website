@@ -36,7 +36,6 @@ jobs:
         with:
           directory: ./coverage/reports/
           files: results.json
-          fail_ci_if_error: true
           verbose: true
   preview:
     name: Deploy to Cloudflare Pages (Preview)
