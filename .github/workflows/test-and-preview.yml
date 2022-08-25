@@ -29,14 +29,16 @@ jobs:
       - name: Run Playwright Tests
         continue-on-error: false
         run: |
-          PLAYWRIGHT_JSON_OUTPUT_NAME=results.json npx playwright test --reporter=json
+          PLAYWRIGHT_JSON_OUTPUT_NAME=./coverage/reports/results.json npx playwright test --reporter=json
           
       - name: Report Tests to Codecov
         uses: codecov/codecov-action@v3
         with:
+          directory: ./coverage/reports/
           files: ./results.json
           flags: unittests
           name: codecov-mvp-website
+          path_to_write_report: ./coverage/codecov_report.txt
           fail_ci_if_error: true
           verbose: true
   preview:
