@@ -13,6 +13,8 @@
     &nbsp;
 	<a href="https://github.com/CodeCrowCorp/mvp-website/actions"><img src="https://github.com/CodeCrowCorp/mvp-website/actions/workflows/production.yml/badge.svg"></a>
     &nbsp;
+	<a href="https://github.com/CodeCrowCorp/mvp-website/actions"><img src="https://img.shields.io/codecov/c/github/CodeCrowCorp/mvp-website"></a>
+    &nbsp;
     <a href="https://github.com/CodeCrowCorp/mvp-website/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-GPL3.0-00bfff.svg"></a>
 </p>
 
