@@ -21,6 +21,6 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: "mvp-web-client"
+          projectName: "mvp-website"
           directory: ".svelte-kit/cloudflare"
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
