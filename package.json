@@ -23,7 +23,7 @@
 		"@playwright/test": "^1.25.1",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
-		"autoprefixer": "10.4.9",
+		"autoprefixer": "10.4.11",
 		"concurrently": "^7.3.0",
 		"cross-env": "^7.0.3",
 		"eslint": "^8.23.0",
