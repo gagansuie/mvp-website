@@ -11,3 +11,4 @@ e2eresults.json
 results.json
 result.json
 .gitignore
+.yarn/
