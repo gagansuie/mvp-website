@@ -3,7 +3,7 @@ name: test-and-preview.yml
 on:
   push:
     branches:
-      - dev
+      - debug
   workflow_dispatch:
 
 jobs:
@@ -29,16 +29,22 @@ jobs:
       - name: Run Playwright Tests
         continue-on-error: false
         run: |
-          PLAYWRIGHT_JSON_OUTPUT_NAME=./coverage/reports/results.json npx playwright test --reporter=json
-          
+          PLAYWRIGHT_JSON_OUTPUT_NAME=e2eresults.json npx playwright test --reporter=json
+
+      - name: Convert E2E Report to Coverage Report
+        run : |
+          npm install playwright-e2e-report
+          node ./tests/reportConvertor.js
+
       - name: Report Tests to Codecov
         uses: codecov/codecov-action@v3
         with:
-          directory: ./coverage/reports/
+          directory: ./
           files: results.json
           verbose: true
-  preview:
-    name: Deploy to Cloudflare Pages (Preview)
-    needs: [test]
-    uses: ./.github/workflows/deploy-to-pages.yml
-    secrets: inherit
+          
+  # preview:
+  #   name: Deploy to Cloudflare Pages (Preview)
+  #   needs: [test]
+  #   uses: ./.github/workflows/deploy-to-pages.yml
+  #   secrets: inherit

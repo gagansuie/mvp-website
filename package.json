@@ -16,8 +16,7 @@
 		"check:watch": "svelte-check --tsconfig ./jsconfig.json --watch",
 		"test": "playwright test",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
-		"format": "prettier --write --plugin-search-dir=. .",
-		"prepare": "svelte-kit sync"
+		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.25.1",
@@ -29,6 +28,7 @@
 		"eslint": "^8.23.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"node-fetch": "^3.2.10",
 		"postcss": "^8.4.14",
 		"postcss-cli": "^10.0.0",
 		"prettier": "^2.6.2",
@@ -46,6 +46,7 @@
 		"@tailwindcss/typography": "^0.5.4",
 		"animate.css": "^4.1.1",
 		"daisyui": "^2.20.0",
-		"nprogress": "^0.2.0"
+		"nprogress": "^0.2.0",
+		"playwright-e2e-report": "file:../playwright-e2e-report"
 	}
 }
