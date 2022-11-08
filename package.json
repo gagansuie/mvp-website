@@ -1,6 +1,6 @@
 {
 	"name": "mvp-website",
-	"version": "0.0.1",
+	"version": "3.2.4",
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
