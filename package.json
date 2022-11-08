@@ -46,6 +46,6 @@
 		"@tailwindcss/typography": "^0.5.4",
 		"animate.css": "^4.1.1",
 		"daisyui": "^2.20.0",
-		"nprogress": "^0.2.0",
+		"nprogress": "^0.2.0"
 	}
 }
