@@ -33,7 +33,7 @@ jobs:
 
       - name: Convert E2E Report to Coverage Report
         run : |
-          npm install playwright-e2e-report
+          npm install playwright-e2e-coverage-report
           node ./tests/reportConvertor.js
 
       - name: Report Tests to Codecov
