@@ -3,7 +3,7 @@
 // to a coverage friendly format ( a bit hacky for now)
 
 import fs from 'fs'
-import { createE2ECoverageReport } from 'playwright-e2e-report'
+import { createE2ECoverageReport } from 'playwright-e2e-coverage-report'
 
 /**
  * Entry point script to start report conversion script
