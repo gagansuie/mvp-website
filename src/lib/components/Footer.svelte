@@ -39,61 +39,61 @@
 					class="flex flex-col md:justify-between space-y-6 md:space-y-0 text-center md:text-left text-sm"
 				>
 					<nav class="space-x-4 text-light-200 text-xl">
-						<a href="javascript:void(0)" class="hover:text-prime-400">
+						<a href={'#'} class="hover:text-prime-400">
 							<i class="fa-brands fa-facebook-f" />
 						</a>
-						<a href="javascript:void(0)" class="hover:text-prime-400">
+						<a href={'#'} class="hover:text-prime-400">
 							<i class="fa-brands fa-twitter" />
 						</a>
-						<a href="javascript:void(0)" class="hover:text-prime-400">
+						<a href={'#'} class="hover:text-prime-400">
 							<i class="fa-brands fa-twitch" />
 						</a>
-						<a href="javascript:void(0)" class="hover:text-prime-400">
+						<a href={'#'} class="hover:text-prime-400">
 							<i class="fa-brands fa-youtube" />
 						</a>
-						<a href="javascript:void(0)" class="hover:text-prime-400">
+						<a href={'#'} class="hover:text-prime-400">
 							<i class="fa-brands fa-instagram" />
 						</a>
-						<a href="javascript:void(0)" class="hover:text-prime-400">
+						<a href={'#'} class="hover:text-prime-400">
 							<i class="fa-brands fa-snapchat" />
 						</a>
-						<a href="javascript:void(0)" class="hover:text-prime-400">
+						<a href={'#'} class="hover:text-prime-400">
 							<i class="fa-brands fa-vk" />
 						</a>
 					</nav>
 				</div>
 				<div class="flex flex-row flex-auto justify-between space-x-5">
 					<nav class="flex flex-col space-y-3">
-						<a href="javascript:void(0)" class="font-medium text-gray-300 hover:text-gray-400">
+						<a href={'#'} class="font-medium text-gray-300 hover:text-gray-400">
 							Solutions
 						</a>
-						<a href="javascript:void(0)" class="font-medium text-gray-300 hover:text-gray-400">
+						<a href={'#'} class="font-medium text-gray-300 hover:text-gray-400">
 							Features
 						</a>
-						<a href="javascript:void(0)" class="font-medium text-gray-300 hover:text-gray-400">
+						<a href={'#'} class="font-medium text-gray-300 hover:text-gray-400">
 							Pricing Plans
 						</a>
-						<a href="javascript:void(0)" class="font-medium text-gray-300 hover:text-gray-400">
+						<a href={'#'} class="font-medium text-gray-300 hover:text-gray-400">
 							Analytics
 						</a>
-						<a href="javascript:void(0)" class="font-medium text-gray-300 hover:text-gray-400">
+						<a href={'#'} class="font-medium text-gray-300 hover:text-gray-400">
 							Support Center
 						</a>
 					</nav>
 					<nav class="flex flex-col justify-end space-y-3">
-						<a href="javascript:void(0)" class="font-medium text-gray-300 hover:text-gray-400">
+						<a href={'#'} class="font-medium text-gray-300 hover:text-gray-400">
 							Team
 						</a>
-						<a href="javascript:void(0)" class="font-medium text-gray-300 hover:text-gray-400">
+						<a href={'#'} class="font-medium text-gray-300 hover:text-gray-400">
 							Terms of Service
 						</a>
-						<a href="javascript:void(0)" class="font-medium text-gray-300 hover:text-gray-400">
+						<a href={'#'} class="font-medium text-gray-300 hover:text-gray-400">
 							Privacy Policy
 						</a>
-						<a href="javascript:void(0)" class="font-medium text-gray-300 hover:text-gray-400">
+						<a href={'#'} class="font-medium text-gray-300 hover:text-gray-400">
 							Cookies
 						</a>
-						<a href="javascript:void(0)" class="font-medium text-gray-300 hover:text-gray-400">
+						<a href={'#'} class="font-medium text-gray-300 hover:text-gray-400">
 							Refunds
 						</a>
 					</nav>
