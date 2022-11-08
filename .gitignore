@@ -7,3 +7,7 @@ node_modules
 .env.*
 !.env.example
 vite.config.js.timestamp*
+e2eresults.json
+results.json
+result.json
+.gitignore
