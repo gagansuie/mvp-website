@@ -1,4 +1,4 @@
-name: deploy-to-pages.yml
+name: Deploy to pages
 
 on:  
   workflow_call:

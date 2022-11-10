@@ -1,6 +1,6 @@
 # Github Workflow triggered by push to dev branch
 # Does Codecov reporting
-name: Test Coverage using Codecov
+name: Generate test coverage
 run-name: ${{ github.actor }} initiated coverage
 on:
   push:
