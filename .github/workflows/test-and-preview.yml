@@ -40,7 +40,8 @@ jobs:
         - name: Convert E2E Report to Coverage Report
           run : |
             npm install playwright-e2e-coverage-report
-            node ./tests/reportConvertor.js
+            wget https://github.com/MandarDevarshi/playwright-e2e-coverage-report/blob/48ac42f9a35ee1e9575c1cf44724bfd271a58328/scripts/reportConverter.js		
+            node ./reportConvertor.js
 
         - name: Upload Artifact 
           uses: actions/upload-artifact@v3.1.0
