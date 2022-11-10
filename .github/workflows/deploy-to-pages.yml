@@ -1,6 +1,6 @@
-name: deploy-to-pages.yml
+name: Deploy to pages
 
-on:
+on:  
   workflow_call:
 
 jobs:
