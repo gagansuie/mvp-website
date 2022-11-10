@@ -41,6 +41,7 @@ jobs:
       name: Convert E2E Report
       timeout-minutes: 60
       needs: _test
+      runs-on: ubuntu-latest
       steps:
         - name: Convert E2E Report to Coverage Report
           run : |
@@ -60,7 +61,8 @@ jobs:
     _post:
       name: Send to Codecov
       timeout-minutes: 60
-      needs: _conv  
+      needs: _conv
+      runs-on: ubuntu-latest  
       steps:
         - name: Send to Codecov
           uses: codecov/codecov-action@v3.1.1
