@@ -36,7 +36,12 @@ jobs:
         - name: Run Playwright Tests
           continue-on-error: true
           run: npm run test
-
+    
+    _conv:
+      name: Convert E2E Report
+      timeout-minutes: 60
+      needs: _test
+      steps:
         - name: Convert E2E Report to Coverage Report
           needs: Run Playwright Tests
           run : |
@@ -53,7 +58,12 @@ jobs:
             name: results.json
             path: ./results.json
             retention-days: 30
-        
+
+    _post:
+      name: Send to Codecov
+      timeout-minutes: 60
+      needs: _conv  
+      steps:
         - name: Send to Codecov
           uses: codecov/codecov-action@v3.1.1
           needs: Convert E2E Report to Coverage Report
