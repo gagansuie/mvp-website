@@ -48,6 +48,7 @@ jobs:
         - name: Upload Artifact 
           uses: actions/upload-artifact@v3.1.0
           if: always()
+          needs: Convert E2E Report to Coverage Report
           with:
             name: results.json
             path: ./results.json
@@ -55,6 +56,7 @@ jobs:
         
         - name: Send to Codecov
           uses: codecov/codecov-action@v3.1.1
+          needs: Convert E2E Report to Coverage Report
           with:
             files: ./results.json
             flags: "E2E Tests"
