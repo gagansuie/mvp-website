@@ -66,7 +66,6 @@ jobs:
       steps:
         - name: Send to Codecov
           uses: codecov/codecov-action@v3.1.1
-          needs: Convert E2E Report to Coverage Report
           with:
             files: ./results.json
             flags: "E2E Tests"
