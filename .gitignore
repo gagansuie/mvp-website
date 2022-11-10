@@ -7,7 +7,4 @@ node_modules
 .env.*
 !.env.example
 vite.config.js.timestamp*
-yarn.lock
-.gitignore
-.yarn/
 coverage/
