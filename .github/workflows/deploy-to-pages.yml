@@ -1,10 +1,7 @@
 name: deploy-to-pages.yml
 
 on:  
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+  workflow_call:
 
 jobs:
   deploy:

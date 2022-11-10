@@ -1,6 +1,6 @@
 {
 	"name": "mvp-website",
-	"version": "3.2.4",
+	"version": "0.0.1",
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
@@ -28,7 +28,6 @@
 		"eslint": "^8.23.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
-		"node-fetch": "^3.2.10",
 		"postcss": "^8.4.14",
 		"postcss-cli": "^10.0.0",
 		"prettier": "^2.6.2",

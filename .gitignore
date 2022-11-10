@@ -7,10 +7,6 @@ node_modules
 .env.*
 !.env.example
 vite.config.js.timestamp*
-e2eresults.json
-results.json
 yarn.lock
 .gitignore
 .yarn/
-tests/reportConvertor.js
-.github/workflows/test-and-report.yml

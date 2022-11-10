@@ -6,8 +6,7 @@ const config: PlaywrightTestConfig = {
         command: 'npm run build && npm run preview',
         port: 4173
     },
-    workers: "80%",
-    // globalTeardown: "./tests/reportConvertor",
+    workers: process.env.CI ? 4 : undefined
 };
 
 export default config;

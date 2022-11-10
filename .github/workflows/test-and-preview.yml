@@ -1,11 +1,11 @@
 # Github Workflow triggered by push to dev branch
 # Does Codecov reporting
-name: Code Coverage using Codecov
-run-name: ${{ github.actor }} initiated Codecov
+name: Test Coverage using Codecov
+run-name: ${{ github.actor }} initiated coverage
 on:
   push:
     branches:
-      - debug
+      - dev
   workflow_dispatch:
       
 jobs:
@@ -17,7 +17,7 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v3
           with:
-            ref: debug 
+            ref: dev 
         
         - name: Setup Node
           uses: actions/setup-node@v3
@@ -57,3 +57,9 @@ jobs:
           with:
             files: ./results.json
             flags: "e2ecoverage"
+
+    _preview:
+      name: Deploy to Cloudflare Pages (Preview)
+      needs: [_test]
+      uses: ./.github/workflows/deploy-to-pages.yml
+      secrets: inherit
