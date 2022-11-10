@@ -13,9 +13,7 @@
     &nbsp;
     <a href="https://github.com/CodeCrowCorp/mvp-website/actions"><img src="https://github.com/CodeCrowCorp/mvp-website/actions/workflows/production.yml/badge.svg"></a>
     &nbsp;
-    <a href="https://codecov.io/github/MandarDevarshi/mvp-website-codecov" > 
- 	<img src="https://codecov.io/github/MandarDevarshi/mvp-website-codecov/branch/debug/graph/badge.svg?token=0OVPBH4IUT"/> 
- 	</a>
+    <a href="https://about.codecov.io/"><img src="https://codecov.io/gh/CodeCrowCorp/mvp-website/branch/master/graph/badge.svg?token=J3XRJHNPEO"></a>
     &nbsp;
     <a href="https://dependabot.com/"><img src="https://img.shields.io/badge/dependabot-enabled-025e8c?logo=Dependabot"></a>
     &nbsp;
