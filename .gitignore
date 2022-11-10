@@ -9,6 +9,8 @@ node_modules
 vite.config.js.timestamp*
 e2eresults.json
 results.json
-result.json
+yarn.lock
 .gitignore
 .yarn/
+tests/reportConvertor.js
+.github/workflows/test-and-report.yml

@@ -1,50 +1,57 @@
-name: test-and-preview.yml
-
+# Github Workflow triggered by push to dev branch
+# Does Codecov reporting
+name: Code Coverage using Codecov
+run-name: ${{ github.actor }} initiated Codecov
 on:
   push:
     branches:
       - debug
   workflow_dispatch:
-
+      
 jobs:
-  test:
-    name: "Test using Playwright"
-    timeout-minutes: 60
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@master
+    _test:
+      name: Test using Playwright
+      timeout-minutes: 60
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v3
+          with:
+            ref: main 
+        
+        - name: Setup Node
+          uses: actions/setup-node@v3
+          with:
+            node-version: 17 # See if the version is correct for the repo
+                   
+        - name: Install Dependencies
+          run: |
+            npm install
+            npx playwright install
+            
+        - name: Install Playwright Browser
+          run: |
+            npx playwright install-deps
+            
+        - name: Run Playwright Tests
+          continue-on-error: true
+          run: npm run test
 
-      - name: Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: "17"
+        - name: Convert E2E Report to Coverage Report
+          run : |
+            npm install playwright-e2e-coverage-report
+            node ./tests/reportConvertor.js
 
-      - name: Install dependencies
-        run: |
-          npm install
-          npx playwright install-deps
-          npx playwright install
-
-      - name: Run Playwright Tests
-        continue-on-error: false
-        run: |
-          PLAYWRIGHT_JSON_OUTPUT_NAME=e2eresults.json npx playwright test --reporter=json
-
-      - name: Convert E2E Report to Coverage Report
-        run : |
-          npm install playwright-e2e-coverage-report
-          node ./tests/reportConvertor.js
-
-      - name: Report Tests to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          directory: ./
-          files: results.json
-          verbose: true
-          
-  # preview:
-  #   name: Deploy to Cloudflare Pages (Preview)
-  #   needs: [test]
-  #   uses: ./.github/workflows/deploy-to-pages.yml
-  #   secrets: inherit
+        - name: Upload Artifact 
+          uses: actions/upload-artifact@v3.1.0
+          if: always()
+          with:
+            name: results.json
+            path: ./results.json
+            retention-days: 30
+        
+        - name: Send to Codecov
+          uses: codecov/codecov-action@v3.1.1
+          with:
+            files: ./results.json
+            flags: "E2E Tests"
