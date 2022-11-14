@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/CodeCrowCorp/mvp-website/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-GPL3.0-00bfff.svg"></a>
+    <a href="https://github.com/CodeCrowCorp/mvp-website/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/license-GPL3.0-00bfff.svg"></a>
     &nbsp;
 	<a href="https://discord.gg/codecrow"><img src="https://img.shields.io/discord/766681806463303680?label=discord&color=5a66f6"></a>
 	&nbsp;
@@ -35,7 +35,7 @@
 Once you've forked and cloned the project:
 
 ```sh
-# Install dependencies 
+# Install dependencies
 $ npm install
 
 # Start a development server
