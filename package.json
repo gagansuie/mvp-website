@@ -19,34 +19,34 @@
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@playwright/test": "^1.25.1",
+		"@playwright/test": "^1.28.0",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"autoprefixer": "10.4.13",
-		"concurrently": "^7.3.0",
+		"concurrently": "^7.6.0",
 		"cross-env": "^7.0.3",
-		"eslint": "^8.23.0",
+		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"postcss": "^8.4.19",
 		"postcss-cli": "^10.0.0",
 		"prettier": "^2.6.2",
-		"prettier-plugin-svelte": "^2.7.0",
+		"prettier-plugin-svelte": "^2.8.1",
 		"svelte": "^3.53.1",
 		"svelte-check": "^2.9.0",
 		"svelte-preprocess": "^4.10.7",
 		"tailwind-scrollbar": "^2.0.1",
-		"tailwindcss": "^3.2.3",
-		"typescript": "^4.8.2"
+		"tailwindcss": "^3.2.4",
+		"typescript": "^4.9.3"
 	},
 	"dependencies": {
 		"@tailwindcss/aspect-ratio": "^0.4.0",
 		"@tailwindcss/forms": "^0.5.2",
 		"@tailwindcss/typography": "^0.5.4",
 		"animate.css": "^4.1.1",
-		"daisyui": "^2.39.0",
+		"daisyui": "^2.41.0",
 		"nprogress": "^0.2.0",
 		"playwright-e2e-coverage-report": "^1.0.20",
-		"vite": "^3.2.3"
+		"vite": "^3.2.4"
 	}
 }
